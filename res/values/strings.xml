@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fine Master</string>
+    <string name="background_content">Fine\nMaster</string>
+    <string name="add_member">Add Member</string>
+    <string name="person_first_name">First Name:</string>
+    <string name="person_last_name">Last Name:</string>
+    <string name="addMemberTitle">Add Squqd Member</string>
+    <string name="save_button">Save</string>
+    <string name="update_member">Update Member</string>
+    <string name="add_fine">Add Fine</string>
+    <string name="update_fine">Update Fine</string>
+    <string name="fine_description">Description:</string>
+    <string name="fine_value">Value:</string>
+    <string name="fine_activity_title">Edit Fine</string>
+    <string name="member_activity_title">Edit Member</string>
+    <string name="member_fine_title">Fine Member</string>
+    <string name="member_fine_for">Add fine for:</string>
+    <string name="member_fine_button">Fine</string>
+    <string name="num_string">25</string>
+    <string name="context_menu_view_member">View Member</string>
+    <string name="context_menu_pay_deposit">Pay Deposit</string>
+    <string name="context_menu_list_deposits">List Deposits</string>
+    <string name="context_menu_list_fines">List Fines</string>
+    <string name="add_deposit_button">Add Deposit</string>
+    <string name="deposit_text">Deposit:</string>
+    <string name="deposit_activity">Make Deposit</string>
+    <string name="fine_master_icon_desc">fine master icon</string>
+    <string name="less_than_less_than">&lt;&lt;</string>
+    <string name="greater_than_greater_than">&gt;&gt;</string>
+    <string name="calendar_activity">Calendar View</string>
+    <string name="date_format_out">yyyy MMM dd</string>
+    <string name="show_fines">Show Fines</string>
+    <string name="show_deposits">Show Deposits</string>
+    <string name="entry_list_activity">Entries List</string>
+    <string name="entries_for">Entries for:   </string>
+    <string name="on_colon">on:   </string>
+    <string name="fine_manager_activity">Fine Manager</string>
+    <string name="manage_fines">Manage Fines</string>
+    <string name="edit_fine">Edit Fine</string>
+    <string name="show_all">Show All</string>
+    <string name="all_dates">All Dates</string>
+    <string name="fine_all_members">Fine All Members</string>
+    <string name="summary_fine_count">Number of Fines:</string>
+    <string name="summary_fine_total">Fine Total:</string>
+    <string name="summary_deposit_total">Deposit Total:</string>
+
+</resources>

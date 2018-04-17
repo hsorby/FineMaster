@@ -1,0 +1,63 @@
+CREATE TABLE fines 
+	(
+     id int auto_increment primary key, 
+     des varchar(30),
+     value int 
+    );
+
+INSERT INTO fines
+(des, value)
+VALUES
+('fine A', 5),
+('fine B', 3),
+('fine C', 7);
+
+CREATE TABLE deposits
+(
+     id int auto_increment primary key, 
+  member_id int,
+  value int
+  );
+
+INSERT INTO deposits
+(member_id, value)
+VALUES
+(1, 8),
+(1, 3),
+(2, 27),
+(3, 22);
+
+CREATE TABLE members 
+	(
+     id int auto_increment primary key, 
+     first varchar(20), 
+     last varchar(20)
+    );
+
+INSERT INTO members
+(first, last)
+VALUES
+('john', 'brown'),
+('dave', 'green'),
+  ('rod', 'stewart'),
+('alex', 'davies');
+
+CREATE TABLE membersfines
+    (
+      id int auto_increment primary key,
+      member_id int,
+      fine_id int
+    );
+
+INSERT INTO membersfines
+(member_id, fine_id)
+VALUES
+(1, 2),
+(1, 2),
+(2, 1),
+(2, 2),
+(2, 1),
+(4, 1);
+
+CREATE VIEW depositsummary AS SELECT deposits.member_id, SUM(deposits.value) AS deposittotal FROM deposits GROUP BY deposits.member_id;
+CREATE VIEW finesummary AS SELECT membersfines.member_id, SUM(fines.value) AS finetotal FROM membersfines INNER JOIN fines ON membersfines.fine_id = fines.id GROUP BY membersfines.member_id;

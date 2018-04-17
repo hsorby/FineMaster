@@ -1,0 +1,20 @@
+-- SELECT members.first,
+-- (SELECT SUM(fines.value) FROM membersfines,fines WHERE membersfines.fine_id = fines.id GROUP BY membersfines.member_id) AS finetotal
+-- FROM members;
+
+SELECT members.first, members.last,
+  (SELECT finesummary.finetotal FROM finesummary WHERE members.id = finesummary.member_id) 
+    AS balance
+FROM members;
+
+SELECT SUM(fines.value) FROM membersfines,fines WHERE membersfines.fine_id = fines.id GROUP BY membersfines.member_id;
+
+SELECT members.first, finesummary.member_id FROM members, finesummary WHERE members.id = finesummary.member_id;
+
+SELECT * FROM finesummary;
+
+SELECT * FROM depositsummary;
+
+SELECT * FROM finesummary LEFT JOIN depositsummary ON finesummary.member_id = depositsummary.member_id;
+	
+	
